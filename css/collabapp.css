@@ -1,0 +1,17 @@
+/* CSS declarations go here */
+
+#logo {
+	float: left;
+	margin:10px 50px 5px 10px;
+	font-size:1.9em;
+}
+
+#focus-section {
+/*	background-image:url('color.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+*/
+}
+#focus-text {
+	clear:both;	
+}
