@@ -8,6 +8,8 @@
 
 		{{> midSection1}}
 
+		<hr>
+
 		{{> midSection2}}
 
 		{{> botSection}}
@@ -15,43 +17,55 @@
 </body>
 
 <template name="topSection">
-	<div class="row">
-		<div class="navbar navbar-inverse">
-		    <div class="navbar-header">
-		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		      </button>
-		      <h1 id="logo">Collabapp</h1>
-		    </div>
-		    <div class="collapse navbar-collapse">
-		      <ul class="nav navbar-nav">
-		        <li class="active"><a href="#">Home</a></li>
-		        <li><a href="#about">About</a></li>
-		        <li><a href="#collaborate">Collaborate</a></li>
-		        <li><a href="#contact">Contact</a></li>
-		      </ul>
-		    </div><!--/.nav-collapse -->
-		</div>	
-	</div>
+	<div class="navbar navbar-inverse" role="navigation">
+		<div class="container-fluid">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-collapse">
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <h1 id="logo">Collabapp</h1>
+	    </div>
+	    <div class="collapse navbar-collapse" id="menu-collapse">
+	      <ul class="nav navbar-nav">
+	        <li class="active"><a href="#">Home</a></li>
+	        <li><a href="#about">About</a></li>
+	        <li><a href="#collaborate">Collaborate</a></li>
+	        <li><a href="#contact">Contact</a></li>
+	      </ul>
+	    </div><!--/.nav-collapse -->
+	    </div>
+	</div>	
 
 	<div class="row" id="focus-section">
 		<h3 id="focus-text">A demo app for our collaboration</h3>
+		<hr>
 	</div>
+
 </template>
 
 <template name="midSection1">
 	<div class="row">
-		<h3>Title of Awesome</h3>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum ultrices vehicula. Proin a mi augue. Integer elementum lacus vel vulputate ultricies.</p>
+		<div class="col-xs-4">
+			<h3>Title of Awesome</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum ultrices vehicula. Proin a mi augue. Integer elementum lacus vel vulputate ultricies.</p>
+		</div>
+		<div class="col-xs-8">
+			<img src="http://placehold.it/400x200">
+		</div>
 	</div>
 </template>
 
 <template name="midSection2">
 	<div class="row">
-		<h3>Second more Awesome title</h3>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum ultrices vehicula. Proin a mi augue. Integer elementum lacus vel vulputate ultricies.</p>
+		<div class="col-xs-4">
+			<h3>Second more Awesome title</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum ultrices vehicula. Proin a mi augue. Integer elementum lacus vel vulputate ultricies.</p>
+		</div>
+		<div class="col-xs-8">
+			<img src="http://placehold.it/400x200">
+		</div>		
 	</div>
 </template>
 
