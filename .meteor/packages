@@ -9,3 +9,5 @@ autopublish
 insecure
 mizzao:bootstrap-3
 accounts-ui
+accounts-password
+accounts-base
